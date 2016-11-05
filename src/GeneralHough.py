@@ -37,7 +37,7 @@ def build_r_table(image, origin):
     r_table = defaultdict(list)
     for (i,j),value in np.ndenumerate(edges):
         if value:
-            r_table[gradient[i,j]].append((origin[0]-i, origin[1]-j))
+        r_table[gradient[i,j]].append((origin[0]-i, origin[1]-j))
 
     return r_table
 
